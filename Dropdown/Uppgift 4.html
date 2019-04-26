@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(0, 125, 128);
+        }
+
+        header {
+            background-color: hsl(0, 0%, 100%);
+            border: 2px solid black;
+            /*headern får en svart färg*/
+            position: relative;
+        }
+
+        h1 {
+            padding: 8px 10px;
+            text-align: center;
+        }
+
+        h2.sticky {
+            position: sticky;
+            top: 0;
+            padding: 10px;
+            border: 5px solid rgb(0, 0, 0);
+            text-align: center;
+            background-image: linear-gradient(to right, rgb(0, 0, 0), rgb(184, 73, 22), #d6a253, rgb(255, 255, 255), #d6a253, rgb(184, 73, 22), rgb(0, 0, 0))
+        }
+
+        /*headerns storlek och färg förändras*/
+        @keyframes example {
+            0% {
+                background-color: rgb(255, 255, 255);
+                width: 100vw;
+                left: 0vw;
+            }
+
+            25% {
+                background-color: hsl(0, 55%, 43%);
+                width: 75vw;
+                left: 0vw;
+                font-size: 90%;
+            }
+
+            50% {
+                background-color: hsl(0, 100%, 35%);
+                width: 50vw;
+                left: 30vw;
+                font-size: 75%;
+            }
+
+            75% {
+                background-color: hsl(0, 55%, 43%);
+                width: 30vw;
+                left: 30vw;
+                font-size: 60%;
+            }
+
+            100% {
+                background-color: hsl(0, 0%, 100%);
+                width: 30vw;
+                left: 30vw;
+                font-size: 50%;
+            }
+        }
+
+        img {
+            float: right;
+            margin: 5px;
+            width: auto;
+            display: block;
+            height: auto;
+            max-width: 100%;
+            transition: width 5s, height 5s, transform 5s;
+        }
+
+        /*bildens storlek förändras medan den snurrar*/
+        img:hover {
+            width: 620px;
+            height: 413px;
+            transform: rotate(180deg);
+            transform: rotateX(0), rotateY(120deg), rotateZ(0);
+        }
+
+        p {
+            text-align: justify;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        /*headerns storlek och färg förändras*/
+        header {
+            width: auto;
+            height: 100px;
+            background-color: #ffffff;
+            -webkit-animation-name: example;
+            -webkit-animation-duration: 5s;
+            animation-name: example;
+            animation-duration: infinite;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            transition: width 5s, height 5s, transform 5s;
+        }
+
+        footer {
+            height: 75px;
+            width: auto;
+            background-image: linear-gradient(to right, #dbdcd7 0%, #dddcd7 24%, #e2c9cc 30%, #e7627d 46%, #b8235a 59%, #801357 71%, #3d1635 84%, #1c1a27 100%);
+        }
+
+        #container {
+            position: relative;
+            width: 100%;
+            height: 0;
+            padding-bottom: 56.25%;
+        }
+
+        #video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 2px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 class="sticky">Call of Duty: Black Ops 4</h1>
+    </header>
+    <h2 class="sticky">
+        <i><b>Call of Duty: Black Ops IIII</b></i>
+    </h2>
+    <main>
+        <img src="https://cdn.vox-cdn.com/thumbor/S1OBvZXq4JpzvVpNUZwhnyI_Aw0=/0x0:1802x863/620x413/filters:focal(757x288:1045x576):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/58956305/blops3.0.jpg"
+            alt="COD">
+        <p><i><b>Call of Duty: Black Ops 4</b></i> (stylized as <i><b>Call of Duty: Black Ops IIII</b></i>) is a
+            multiplayer first-person shooter developed by Treyarch and published by Activision. It was released
+            worldwide for Microsoft Windows, PlayStation 4, and Xbox One on October 12, 2018. It is a sequel to the 2015
+            game Call of Duty: Black Ops III, the fifth entry in the Black Ops sub-series, and the 15th installment in
+            the Call of Duty series overall. Black Ops 4 is the first Call of Duty title without a traditional
+            single-player campaign mode. Instead, it features the Solo Missions mode, which focuses on the backstories
+            of the game's multiplayer characters, known as "Specialists". The missions take place between Black Ops II
+            and III chronologically. Some of the Specialists also carried over from Black Ops III. The multiplayer mode
+            is the first in the series to not feature automatic health regeneration and introduces both predictive
+            recoil and a new ballistics system. The game includes three Zombies maps on release day, four if a special
+            edition of the game, or the Black Ops Pass, is purchased. The locations of the maps include the RMS Titanic,
+            an arena in Ancient Rome, and Alcatraz Federal Penitentiary. The game also introduces a battle royale mode
+            called Blackout, which features up to 100 players in each match. Many characters from this and other Black
+            Ops titles can be used as the player's character model in this mode.
+
+            Development for the game started shortly after the release of Black Ops III. Treyarch chose not to create a
+            campaign mode for the game at the beginning of development, instead putting all of their focus on the
+            multiplayer aspect. They cited an increased interest for multiplayer and lack of time spent by the
+            playerbase on the campaign mode as reasons why they shifted their focus. Black Ops 4 utilizes Blizzard's
+            Battle.net platform for the Windows version instead of Steam, the first game in the series to do so. Teasing
+            of the game began in March 2018, with a full reveal taking place later in May. Two betas were held for the
+            game; one for the multiplayer in August and one for Blackout in September. The release date was moved up to
+            October instead of the series' usual November in an attempt to avoid coinciding with the release of other
+            high-profile games.
+
+            Pre-release reception of the game was mixed. Fans of the series expressed disappointment at the game's lack
+            of a campaign mode. The Black Ops Pass, a season pass that distributes downloadable content (DLC), also
+            received heavy backlash due to the map packs only being made available through the pass and not separately,
+            which had been an option with the DLCs of previous titles. Nonetheless, upon release, Black Ops 4 received
+            positive reviews, with particular praise towards its Blackout mode. It is the best-selling digital launch in
+            Activision's history, surpassing 2017's Call of Duty: WWII, while physical launch sales for the game were
+            the lowest in the series for a decade.</p>
+        <h2>Gameplay</h2>
+        <p><i>Call of Duty: Black Ops 4</i> is a multiplayer first-person shooter video game. Unlike previous titles in
+            the Call of Duty series, Black Ops 4 is the first entry to not feature a traditional single-player campaign,
+            and contains only Multiplayer, Zombies and a new battle royale mode called Blackout.</p>
+        <h3>Multiplayer</h3>
+        <p>Black Ops 4's multiplayer features the return of Specialists, unique soldier characters with special
+            abilities and traits. At launch, the game features a total of ten Specialists, six of which (Ruin, Prophet,
+            Battery, Seraph, Nomad, Firebreak) are returning characters from Black Ops III, while the other four (Recon,
+            Ajax, Torque, Crash) are new additions. Unlike Black Ops III, the game allows only one unique Specialist per
+            team, in order to emphasize the role of each character. Following launch, more Specialists are added to the
+            roster, with unique weaponry and equipment. Multiplayer has also been reworked with various changes for more
+            tactical and teamwork gameplay. Automatic health regeneration is removed in favor of a manual healing system
+            (with each player having a health bar), weapons are now given predictive recoil patterns, and a mixed
+            ballistics system, using both hitscan and projectile damage, is employed as opposed to just hitscan. Weapon
+            customization is also emphasized, allowing for deeper personalization of players' arsenals; attachments are
+            also given tiers, with tier-2 upgrades providing even bigger improvements to the weapons. Certain weapons
+            also offer Operator Mods, which significantly change how a weapon works, while costing a significant portion
+            of the 10 customization slots per class.
+            In addition, the game includes Specialist Headquarters, a solo mode featuring skill-based tutorials that
+            unlock backstories on various Specialists in the game. The missions are set within the same narrative world
+            of the Black Ops campaigns, between the events of Black Ops II and Black Ops III.</p>
+        <h3>Zombies:</h3>
+        <p>Zombies returns as the cooperative multiplayer mode for Black Ops 4. The game mode features a wider range of
+            customization, allowing for more personalized play styles. Mechanics of the game can be customized via
+            "Custom Mutations", which include over 100 variables, such as overall difficulty, zombie speed, health,
+            damage, and more. Time-limited events known as "Callings" are also promised to be included in the game for
+            long-term engagement. Similar to the Nazi Zombies mode in Call of Duty: WWII, custom loadouts are included
+            to allow players to select different starting weapons, equipment and special upgradable weapons, as well as
+            perk selection to be available in each match. A new game type, Rush, is introduced into Zombies, where the
+            players build up points and multipliers and compete against one another for the highest point possible until
+            death. Black Ops 4 features a new form of consumable items called Elixirs, which grant temporary buffs to
+            the players upon activation; and Talismans, special modifiers that are applied at the start of each match.
+            Elixirs are provided in five types: Classic, Common, Rare, Legendary and Epic; the first is unlocked
+            permanently via player progression, while the latter four are consumable and only craftable using the
+            in-game currency. Talismans are also consumable, and can only be acquired in the same method.
+            Black Ops 4 is also the first game to feature two distinctive, separate storylines for Zombies. At launch,
+            the game features three on-disc maps: "Voyage of Despair", which takes place on the RMS Titanic; "IX", which
+            takes place in an Ancient Rome arena; and "Blood of the Dead", a soft-remake of the Black Ops II map "Mob of
+            the Dead", taking place once more in Alcatraz Federal Penitentiary. The former two maps form the new "Chaos"
+            storyline, and star a new cast of characters: Scarlett, Stanton, Diego and Bruno; while "Blood of the Dead"
+            returns to the original "Aether" storyline established in the previous Black Ops games, and stars the four
+            original characters (Dempsey, Nikolai, Takeo, Richtofen; also known collectively as Primis). A fourth map,
+            titled "Classified", is included in the special editions of the game and the "Black Ops Pass" at launch, and
+            is a remake of the Black Ops map "Five", featuring the original incarnation of Primis (known as Ultimis) as
+            the playable characters. The map "Dead of the Night" features a celebrity cast, in maintaining tradition of
+            previous Black Ops games containing one Zombies map with playable characters portrayed by celebrities.</p>
+        <h3>Blackout</h3>
+        <p>Black Ops 4 features a battle royale game mode called Blackout which will serve as a stand-in for the
+            campaign mode. While utilizing the traditional Black Ops combat style, the mode includes the largest map
+            featured in a Call of Duty title. Players compete against each other through locations appeared in previous
+            Black Ops games. This mode will also feature land, sea, and air vehicles for players to use. The game mode
+            features various playable characters from the entire Black Ops series, such as Alex Mason from the original
+            game, Raul Menendez from Black Ops II, and the Primis crew from Zombies.
+            In Blackout, up to 100 players, who can choose to play as Solo, Duos, or Quads (squads of 4), drop into the
+            map via helicopters, and must scavenge for loot to survive as the last person(s) standing, while a circle
+            collapses and narrows the map's playable area. In addition to regular weapons, players can equip health
+            kits, armors, ammo types, attachments, as well as perk consumables. AI-controlled zombie enemies also spawn
+            at Zombies-themed locations, such as Asylum or Lighthouse, and upon being killed drop Zombies loot items,
+            such as the Ray Gun or Cymbal Monkey. Several vehicles, such as the ATV and helicopter, are also available
+            for traversal around the map.
+            Similar to Fortnite Battle Royale and the main multiplayer, Blackout features special modes that change the
+            presence or mechanics of physical items in the Blackout world. Modes such as 'Close Quarters' emphasise a
+            faster and more aggressive playstyle through the exclusion of long-range weapons, while others like 'Fast
+            Collapse' feature a faster narrowing of the circle.</p>
+    </main>
+    <div id="container">
+        <iframe src="https://www.youtube.com/embed/CYx_0_WgYWs" frameborder="0" allowfullscreen id="video"></iframe>
+    </div>
+    <footer>
+    </footer>
+</body>
+
+</html>
