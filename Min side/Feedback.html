@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="Minsida.css" type="text/css">
+    <title>Feedback</title>
+</head>
+
+<body class="grid-container">
+    <header class="grid-header" role="banner">
+        <h1>Feedback</h1>
+        <nav id="global">
+            <ul>
+                <li><a id="active" href="HOME.html">HOME</a></li>
+                <li><a href="NHL.html">NHL</a></li>
+                <li><a href="KHL.html">KHL</a></li>
+                <li><a href="SHL.html">SHL</a></li>
+                <li><a href="AHL.html">AHL</a></li>
+                <li><a href="LIIGA.html">LIIGA</a></li>
+                <li class="dropdown"><a href="#">Dropdown</a>
+                    <div class="dropdown-content">
+                        <ul>
+                            <li><a href="Download.html">Download</a></li>
+                            <li><a href="Feedback.html" class="active">Feedback</a></li>
+                            <li class="dropdown-submenu"><a href="#">Dropdown</a>
+                                <div class="dropdown-submenu-content">
+                                    <ul>
+                                        <li><a href="#">Info</a></li>
+                                        <li><a href="#">About</a></li>
+                                        <li><a href="#">Content</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="grid-left"></div>
+    <div class="grid-right"></div>
+    <nav class="grid-nav" role="navigation">
+        <ul>
+            <li><a href="#">League 1</a></li>
+            <li><a href="#">league 2</a></li>
+            <li><a href="#">league 3</a></li>
+            <li><a href="#">league 4</a></li>
+            <li><a href="#">league 5</a></li>
+            <li><a href="#">league 6</a></li>
+            <li><a href="#">league 7</a></li>
+            <li><a href="#">league 8</a></li>
+        </ul>
+    </nav>
+    <main class="grid-main" role="main">
+        <article>
+            <h3>Please do support us by filling in the form below</h3><br><br>
+            <p>Hello!<br><br>
+                Thanks for visiting us. We really appreciate you for choosing our website.
+                To help us improve, we would like you to fill the form below in order to share your experience on our
+                website. It will only take a few minutes. Your support will help us to make our website better for you
+                and others.
+            </p>
+            <form method="POST" action="/WebDevelopment-FinalProject/StartPage.html" novalidate>
+                <fieldset>
+                    <legend>Info & Feedback</legend>
+                    <select name="Feedback type">
+                        <option value="feedback" selected>Feedback (support)</option>
+                        <option value="improvement">Improvement</option>
+                        <option value="report a problem">Report a Problem</option>
+                    </select>
+                    <br>
+                    <label for="email">E-mail:</label>
+                    <br>
+                    <input id="email" type="email" placeholder="E-mail" required>
+                    <br>
+                    <br>
+                    <label for="password">Password:</label>
+                    <br>
+                    <input id="password" type="password" name="password" placeholder="Password" required>
+                    <br>
+                    <br>
+                    <label for="checkbox">If you need any further information kindly fill in the gender section</label>
+                    <br>
+                    <input id="checkbox" type="checkbox" name="If important" checked>
+                    <br>
+                    <br>
+                    <label for="Gender">Gender:</label>
+                    <br>
+                    <label for="Gender-M">Male</label>
+                    <br>
+                    <input id="Gender-M" type="radio" name="Gender">
+                    <br>
+                    <label for="Gender-F">Female</label>
+                    <br>
+                    <input id="Gender-F" type="radio" name="Gender">
+                    <br>
+                    <br>
+                    <label for="feedback">Feedback:</label>
+                    <br>
+                    <textarea id="feedback" name="Feedback" cols="30" rows="10" required>
+
+                        </textarea>
+                    <br>
+                    <br>
+                    <label for="url">Upload a screenshot or a picture</label>
+                    <br>
+                    <input id="url" type="url">
+                    <br>
+                    <br>
+                    <textarea id="Gender" name="readonly" cols="30" rows="1" readonly>
+Thank you for support!
+                        </textarea>
+                    <br>
+                    <br>
+                    <input type="submit" value="Send">
+                </fieldset>
+            </form>
+        </article>
+    </main>
+    <nav id="grid-nav2">
+        <ul>
+            <li><a href="https://en.wikipedia.org/wiki/Football">Football</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/Cricket">Cricket</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/Baseball">Baseball</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/Handball">Handball</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/Field_hockey">Hockey</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/Tennis">Tennis</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/Volleyball">Volleyball</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/Basketball">Basketball</a></li>
+        </ul>
+    </nav>
+    <footer class="grid-footer" role="contentinfo">
+        <dl>
+            <dt><b>Contact Info</b></dt>
+            <dd>
+                <p><b>Gmail:</b> sharif.sahil1111@gmail.com<br><br><b>Facebook:</b> Sharif Rahimi</p>
+            </dd>
+        </dl>
+    </footer>
+</body>
+
+</html>
